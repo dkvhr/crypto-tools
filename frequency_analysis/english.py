@@ -29,8 +29,8 @@ characters[120] = .02 #'x' character
 characters[121] = .001 #'y' character
 characters[122] = .001 #'z' character
 
-def compute_ocurrences(m):
-    number_of_ocurrences = [0] * 256
+def compute_occurrences(m):
+    number_of_occurrences = [0] * 256
     for letter in m:
-        number_of_ocurrences[ord(letter)] += 1
-    return number_of_ocurrences
+        number_of_occurrences[ord(letter)] += 1
+    return number_of_occurrences
