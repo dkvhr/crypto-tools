@@ -1,7 +1,7 @@
 from Crypto.Util.number import bytes_to_long, long_to_bytes
 from decimal import Decimal, getcontext
 
-getcontext.prec()=1000
+getcontext().prec=1000
 
 def broadcast_attack(ns, cs, e):
     m = int(pow(crt(cs, ns), 1/e))
